@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            background-color: rgb(102, 153, 128); 
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <form action="/submit_survey" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="a">Male
+        <br>
+        <input type="radio" id="b">Female
+        <br>
+        <input type="radio" id="c">Other
+        <br>
+        <br>&nbsp;&nbsp;
+        <label for="..">How would you rate our services:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="Ex">Very good</option>
+            <option value="g">Good</option>
+            <option value="g">Average</option>
+            <option value="p">Poor</option>
+        </select><br>
+        <br>&nbsp;&nbsp;&nbsp;
+
+        <label for="q">What would you liked to see improoved in our services:</label><br>
+        <input type="checkbox" id="h" value="abc">Responding time
+        <br> 
+        <input type="checkbox" id="i" value="abcd">Delivery timigs
+        <br> 
+        <input type="checkbox" id="j" value="abcde">Quality of services
+        <br> 
+        <input type="checkbox" id="k" value="abcdef">Others
+        <br>
+        &nbsp;&nbsp;
+        
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
